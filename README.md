@@ -23,16 +23,17 @@ Alamat variabel a adalah = 0x61ff08
 ## Operator Reference (*)
 Reference (*) intinya menyatakan bawasannya suatu variabel merupakan variabel pointer. Operator	reference ini akan membuat suatu variabel pointer untuk menampung alamat.
 ```cpp
-int b = 10; //memberikan nilai pada variabel b
-cout << "-------- OPERATOR REFERENCE --------" << endl;
-int *variabelPointer; //mendeklarasikan variabel variabelPointer sebagai pointer
-variabelPointer = &b; //copy alamat variabel b kedalam variabel variabelPointer
-
-cout << "Nilai variabel b adalah " << b << endl;
-cout << "Alamat variabel b adalah " << &b << endl;
-
-cout << "Isi variabel variabelPointer adalah " << variabelPointer << endl;
-cout << "Nilai yang tertampung dalam variabel variabelPointer adalah " << *variabelPointer << endl;
+int b = 10;
+cout << "---- OPERATOR REFERNCE ----" << endl;
+cout << " Nilai variabel b = " << b << endl;
+cout << "Alamat variabel b = " << &b << endl;
+int *bptr;
+	
+cout << "\n";
+	
+bptr = &b;
+cout << "nilai bptr = " << bptr << endl;
+cout << "nilai *bptr = " << *bptr << endl;
 
 output:
 -------- OPERATOR REFERENCE --------
