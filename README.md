@@ -36,9 +36,10 @@ cout << "nilai bptr = " << bptr << endl;
 cout << "nilai *bptr = " << *bptr << endl;
 
 output:
--------- OPERATOR REFERENCE --------
-Nilai variabel b adalah 10
-Alamat variabel b adalah 0x61ff04
-Isi variabel b adalah 0x61ff04
-Nilai yang tertampung dalam variabel b adalah 10
+---- OPERATOR REFERNCE ----
+ Nilai variabel b = 10
+Alamat variabel b = 0x61ff04
+
+nilai bptr = 0x61ff04
+nilai *bptr = 10
 ```
