@@ -7,7 +7,7 @@
 ## Operator Deference (&)
 
 Deference (&) merupakan operator utk menyatakan alamat dari suatu variabel. cara menggunakan dengan memberikan simbol & pada suatu variabel
-```c++
+```cpp
 int a = 5;
 cout << "-------- OPERATOR DEFERENCE --------"<< endl;
 cout << "Nilai variabel a adalah = " << a << endl;
