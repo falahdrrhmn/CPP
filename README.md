@@ -2,7 +2,7 @@
   <h1> C++ Struktur Data </h1>
 </div>
 
-# Pointer
+# 1. Pointer
 
 ## Operator Deference (&)
 ## Operator Reference (*)
