@@ -31,8 +31,8 @@ variabelPointer = &b; //copy alamat variabel b kedalam variabel variabelPointer
 cout << "Nilai variabel b adalah " << b << endl;
 cout << "Alamat variabel b adalah " << &b << endl;
 
-cout << "Isi variabel b adalah " << variabelPointer << endl;
-cout << "Nilai yang tertampung dalam variabel b adalah " << *variabelPointer << endl;
+cout << "Isi variabel variabelPointer adalah " << variabelPointer << endl;
+cout << "Nilai yang tertampung dalam variabel variabelPointer adalah " << *variabelPointer << endl;
 
 output:
 -------- OPERATOR REFERENCE --------
