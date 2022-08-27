@@ -21,3 +21,4 @@ Alamat variabel a adalah = 0x61ff08
 
 
 ## Operator Reference (*)
+Reference (*) intinya menyatakan bawasannya suatu variabel merupakan variabel pointer. Operator	reference ini akan membuat suatu variabel pointer untuk menampung alamat.
