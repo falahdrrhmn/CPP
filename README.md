@@ -83,7 +83,7 @@ Dalam contoh di atas, kita membuat dua node yang masing-masing berisi sebuah nam
 <br>
 <br>
 
-Tentu! Berikut ini adalah penjelasan tentang struktur data dan contoh kode implementasinya menggunakan bahasa pemrograman C++.
+## Struktur Data C++
 
 1. **Array**:
    - Penjelasan: Array adalah struktur data linear yang menyimpan elemen-elemen dengan tipe data yang sama dalam urutan yang terindeks. Setiap elemen dapat diakses menggunakan indeks.
