@@ -388,7 +388,131 @@ Dalam contoh di atas, kita membuat dua node yang masing-masing berisi sebuah nam
      }
      ```
 
-Itulah contoh kode implementasi dari beberapa struktur data dasar. Setiap contoh di atas memberikan gambaran tentang bagaimana struktur data dapat diimplementasikan menggunakan bahasa pemrograman C++. Anda dapat mempelajari lebih lanjut tentang setiap struktur data dan berbagai operasi yang dapat dilakukan pada mereka untuk memperdalam pemahaman Anda.
+<br>
+<br>
 
+## LAST BUT NOT LEAST
+
+1. **Time Complexity**:
+
+   Time complexity menggambarkan kinerja sebuah algoritma berdasarkan ukuran inputnya. Beberapa notasi time complexity yang sering digunakan:
+
+   - O(1) (konstan): Algoritma yang memiliki waktu eksekusi konstan, tidak tergantung pada ukuran input. Contohnya, mengakses elemen array dengan indeks tertentu.
+   - O(n) (linier): Algoritma yang memiliki waktu eksekusi sebanding dengan ukuran input. Contohnya, traversing (mengunjungi) seluruh elemen dalam sebuah array atau linked list.
+   - O(n^2) (kuadratik): Algoritma yang memiliki waktu eksekusi sebanding dengan kuadrat dari ukuran input. Contohnya, nested loop dengan ukuran input n.
+   - O(log n) (logaritmik): Algoritma yang memiliki waktu eksekusi sebanding dengan logaritma basis 2 dari ukuran input. Contohnya, pencarian biner pada array terurut.
+
+   Contoh implementasi fungsi dengan kompleksitas waktu O(n):
+
+   ```cpp
+   void printArray(const vector<int>& arr) {
+       for (int i = 0; i < arr.size(); i++) {
+           cout << arr[i] << " ";
+       }
+       cout << endl;
+   }
+   ```
+
+2. **Debugging**:
+
+   Debugging adalah proses mengidentifikasi dan memperbaiki kesalahan dalam program. Berikut adalah beberapa teknik yang sering digunakan dalam debugging:
+
+   - Penggunaan pernyataan cetak (print statement) untuk memeriksa nilai variabel pada titik tertentu dalam program:
+     ```cpp
+     int x = 10;
+     cout << "Nilai x: " << x << endl;
+     ```
+
+   - Menggunakan debugger yang disediakan oleh lingkungan pengembangan, seperti Visual Studio Code, Code::Blocks, atau IDE lainnya. Debugger memungkinkan kamu untuk melacak aliran program, memeriksa nilai variabel, dan menemukan kesalahan dengan lebih efisien.
+
+3. **Pengelolaan Memori**:
+
+   Dalam C++, kamu memiliki kendali langsung terhadap alokasi dan dealokasi memori. Beberapa konsep yang perlu dipahami dalam pengelolaan memori di C++:
+
+   - Alokasi memori dinamis menggunakan operator `new`:
+     ```cpp
+     int* ptr = new int;  // Alokasi memori untuk sebuah integer
+     *ptr = 5;            // Memberikan nilai ke variabel yang dialokasikan
+     delete ptr;          // Dealokasi memori yang sudah dialokasikan
+     ```
+
+4. **Standard Template Library (STL)**:
+
+   STL adalah kumpulan pustaka atau komponen yang disediakan oleh C++ untuk membantu pemrogram dalam menyelesaikan berbagai masalah umum. Beberapa komponen yang termasuk dalam STL antara lain:
+
+   - Vektor (vector):
+     ```cpp
+     #include <vector>
+     vector<int> numbers;            // Deklarasi vektor
+     numbers.push_back(10);          // Menambahkan elemen ke vektor
+     numbers.push_back
+
+(20);
+     cout << numbers[0] << endl;     // Mengakses elemen vektor
+     cout << numbers.size() << endl; // Mengakses ukuran vektor
+     ```
+
+   - List:
+     ```cpp
+     #include <list>
+     list<int> numbers;               // Deklarasi list
+     numbers.push_back(10);           // Menambahkan elemen ke list
+     numbers.push_front(20);
+     cout << numbers.front() << endl; // Mengakses elemen pertama list
+     cout << numbers.size() << endl;  // Mengakses ukuran list
+     ```
+
+   - Set:
+     ```cpp
+     #include <set>
+     set<int> numbers;           // Deklarasi set
+     numbers.insert(10);         // Menambahkan elemen ke set
+     numbers.insert(20);
+     cout << numbers.count(10) << endl; // Memeriksa keberadaan elemen dalam set
+     cout << numbers.size() << endl;    // Mengakses ukuran set
+     ```
+
+   - Map:
+     ```cpp
+     #include <map>
+     map<string, int> students;       // Deklarasi map
+     students["John"] = 20;           // Menambahkan elemen ke map
+     students["Alice"] = 25;
+     cout << students["John"] << endl; // Mengakses nilai pada map berdasarkan kunci
+     cout << students.size() << endl;  // Mengakses ukuran map
+     ```
+
+5. **Exception Handling**:
+
+   Exception handling digunakan untuk menangani kesalahan (exception) yang terjadi selama runtime. Beberapa komponen dalam exception handling:
+
+   - Blok `try` dan `catch` untuk menangkap dan menangani exception:
+     ```cpp
+     try {
+         // Kode yang berpotensi menimbulkan exception
+         int x = 10;
+         int y = 0;
+         int result = x / y;  // Division by zero exception
+     } catch (const exception& e) {
+         // Tangani exception
+         cout << "Terjadi exception: " << e.what() << endl;
+     }
+     ```
+
+   - Pernyataan `throw` untuk melempar exception:
+     ```cpp
+     double calculateAverage(const vector<int>& numbers) {
+         if (numbers.empty()) {
+             throw runtime_error("Vector kosong");  // Melakukan throw exception
+         }
+         int sum = 0;
+         for (int num : numbers) {
+             sum += num;
+         }
+         return static_cast<double>(sum) / numbers.size();
+     }
+     ```
+
+Semoga penjelasan dan contoh kode di atas membantu kamu untuk memahami konsep-konsep tersebut dalam C++. Selamat belajar!
 
 ## 
