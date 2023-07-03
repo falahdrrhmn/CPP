@@ -57,6 +57,7 @@ Node adalah sebuah konsep dalam struktur data yang digunakan untuk menyimpan inf
 Contoh penggunaan node bisa ditemukan dalam linked list. Misalkan kita ingin membuat sebuah linked list untuk menyimpan daftar nama-nama. Setiap node dalam linked list akan memiliki dua bagian, yaitu data yang berisi nama dan tautan yang menghubungkannya ke node berikutnya.
 
 Berikut adalah contoh sederhana penggunaan node dalam linked list dengan data nama:
+
 ```
 // Definisi node
 struct Node {
@@ -147,6 +148,7 @@ Dalam contoh di atas, kita membuat dua node yang masing-masing berisi sebuah nam
 3. **Stack**:
    - Penjelasan: Stack adalah struktur data LIFO (Last-In-First-Out) di mana elemen terakhir yang dimasukkan menjadi elemen pertama yang dikeluarkan.
    - Contoh Kode:
+   - 
      ```cpp
      const int MAX_SIZE = 5; // Ukuran stack
      int stack[MAX_SIZE];
@@ -179,10 +181,8 @@ Dalam contoh di atas, kita membuat dua node yang masing-masing berisi sebuah nam
              return -1; // Stack kosong
          }
      }
-     
-    
 
- // Contoh penggunaan stack
+     // Contoh penggunaan stack
      int main() {
          push(1);
          push(2);
@@ -289,9 +289,7 @@ Dalam contoh di atas, kita membuat dua node yang masing-masing berisi sebuah nam
      using namespace std;
      
      // Fungsi untuk menambahkan edge antara dua simpul
-     void addEdge(vector<int> adj[], int
-
- u, int v) {
+     void addEdge(vector<int> adj[], int u, int v) {
          adj[u].push_back(v);
          adj[v].push_back(u);
      }
