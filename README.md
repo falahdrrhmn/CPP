@@ -570,6 +570,4 @@ Data in the linked list: 20
      }
      ```
 
-Semoga penjelasan dan contoh kode di atas membantu kamu untuk memahami konsep-konsep tersebut dalam C++. Selamat belajar!
-
 ## 
