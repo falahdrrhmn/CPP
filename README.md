@@ -78,8 +78,67 @@ node2->next = NULL;
 node1->next = node2;
 ```
 
-Dalam contoh di atas, kita membuat dua node yang masing-masing berisi sebuah nama. Kemudian, kita menghubungkan kedua node tersebut sehingga membentuk linked list. Node pertama (node1) memiliki data "John" dan tautan ke node kedua (node2) yang berisi data "Jane".
+Dalam contoh di atas, kita membuat dua node yang masing-masing berisi sebuah nama. Kemudian, kita menghubungkan kedua node tersebut sehingga membentuk linked list. Node pertama (node1) memiliki data "John" dan tautan ke node kedua (node2) yang berisi data "Jane". RIBETT?? ni contoh lebih sederhana dengan node diluar dan didalam struct:
 
+didalam struct
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+};
+
+struct LinkedList {
+    Node* head;
+};
+
+int main() {
+    LinkedList list;
+    list.head = new Node();
+    list.head->data = 10;
+    list.head->next = nullptr;
+
+    cout << "Data in the linked list: " << list.head->data << endl;
+
+    delete list.head;
+    return 0;
+}
+
+Data in the linked list: 10
+
+
+```
+diluar struct 
+
+```cpp
+
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+};
+
+int main() {
+    Node* head = new Node();
+    head->data = 20;
+    head->next = nullptr;
+
+    cout << "Data in the linked list: " << head->data << endl;
+
+    delete head;
+    return 0;
+}
+
+output :
+Data in the linked list: 20
+
+
+```
 
 <br>
 <br>
