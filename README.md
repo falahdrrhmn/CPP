@@ -58,7 +58,7 @@ Contoh penggunaan node bisa ditemukan dalam linked list. Misalkan kita ingin mem
 
 Berikut adalah contoh sederhana penggunaan node dalam linked list dengan data nama:
 
-```
+```cpp
 // Definisi node
 struct Node {
     string nama;
@@ -445,9 +445,7 @@ Dalam contoh di atas, kita membuat dua node yang masing-masing berisi sebuah nam
      #include <vector>
      vector<int> numbers;            // Deklarasi vektor
      numbers.push_back(10);          // Menambahkan elemen ke vektor
-     numbers.push_back
-
-(20);
+     numbers.push_back(20);
      cout << numbers[0] << endl;     // Mengakses elemen vektor
      cout << numbers.size() << endl; // Mengakses ukuran vektor
      ```
